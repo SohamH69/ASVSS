@@ -3,7 +3,7 @@ import React from "react";
 function Partners() {
   return (
     <div className="mb-20">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 uppercase text-center">
+      <h1 className="text-2xl md:text-3xl font-bold mb-4 uppercase text-center">
         Our Partners
       </h1>
       <div className="grid grid-rows-2 grid-cols-2 md:grid-rows-1 md:grid-cols-4">

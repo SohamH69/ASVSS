@@ -3,43 +3,27 @@ import React, { useEffect, useRef, useState } from "react";
 const cards = [
   {
     number: "01",
-    label: "01. VISION",
-    title: "Built to stand apart",
+    label: "01. Livelihoods",
+    title: "From a shared balcony to a steady income: Meena's beekeeping journey",
     description:
-      "Architecture begins with a clear point of view — proportion, rhythm and purpose working together.",
+      "When Meena first heard about the beekeeping training, she was sceptical. Eighteen months later, she tends six hives and sells at two local markets — and three of her neighbours have enrolled.",
     image: "https://media.istockphoto.com/id/870402320/photo/a-social-worker-meeting-with-a-group-of-villagers.jpg?s=612x612&w=0&k=20&c=2JlS1vqg4pU5lCp8oiFXjVgMPlHbhrmH4wmtRJdq384=",
   },
   {
     number: "02",
-    label: "02. MATERIAL",
-    title: "Material matters",
+    label: "02. Youth",
+    title: "Raju's first district selection — and the coach who refused to give up",
     description:
-      "Every surface, texture and material contributes to how a space feels and performs.",
+      "Three years of early-morning practice, a few setbacks and an unshakeable coach. Raju is now in the district youth squad.",
     image: "https://d34ad2g4hirisc.cloudfront.net/volunteer_positions/photos/000/033/532/main/4a47a0db6e60853dedfcfdf08a5ca249.png",
   },
   {
     number: "03",
-    label: "03. FORM",
-    title: "Designed with purpose",
+    label: "03. Health",
+    title: "Annual Health Camp — 420 patients seen in one day",
     description:
-      "Strong forms create memorable spaces without unnecessary visual noise.",
+      "Our December camp was the largest in ASVSS history. Thirteen volunteer doctors and nurses served 420 patients from five neighbourhoods.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tLgtXkrH8EmDZGZE8FGACQBh5ImnJIRN5aI17fo1ltMsmWC61ah78G8_&s=10",
-  },
-  {
-    number: "04",
-    label: "04. CRAFT",
-    title: "Precision in every layer",
-    description:
-      "The difference is often found in the small decisions that shape the larger experience.",
-    image: "https://wishesandblessings.net/blog/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-02-at-10.58.36-AM-1.jpeg",
-  },
-  {
-    number: "05",
-    label: "05. DETAIL",
-    title: "The last millimetre",
-    description:
-      "Reveals, shadow gaps and junctions decide whether the whole thing looks considered or merely finished.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVl7h92D7E33qYZot_2o-l4tv3wR0xTrAIfcSs2SoTEeW1wJqA2a4EyZb&s=10",
   },
 ];
 
@@ -191,7 +175,7 @@ export default function StackedCards() {
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 max-w-3xl p-7 md:p-12 lg:p-14">
-                  <div className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-rose-300 md:text-sm">
+                  <div className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-white md:text-sm">
                     {card.label}
                   </div>
 

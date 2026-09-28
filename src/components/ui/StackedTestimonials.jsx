@@ -141,11 +141,11 @@ export default function StackedTestimonials() {
          * 80vh per card gives a nice editorial feel.
          */
         height: `${testimonials.length * 80 + 100}vh`,
-        marginTop: "20px",
+        marginTop: "0px",
         marginBottom: "20px",
       }}
     >
-      <div className="sticky top-[100px] flex h-[84vh] flex-col overflow-hidden">
+      <div className="sticky top-[70px] flex h-[84vh] flex-col overflow-hidden">
         {/* Heading */}
         {/* <div className="flex h-[13vh] shrink-0 items-center justify-center px-5">
           <h2 className="m-0 text-center text-[clamp(36px,8vw,72px)] uppercase">

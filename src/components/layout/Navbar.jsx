@@ -8,10 +8,12 @@ function Navbar() {
   const location = useLocation();
   const links = [
     // { label: "Home", path: "/" },
-    { label: "Who We Are", path: "/who-we-are" },
-    { label: "Impact", path: "/impact" },
-    { label: "CSR & Partnerships", path: "/csr-&-partnerships" },
-    { label: "Contact Us", path: "/contact-us" },
+    { label: "About Us", path: "#about-us" },
+    { label: "Our Work", path: "#our-work" },
+    { label: "Stories & Updates", path: "#stories-updates" },
+    { label: "Impact", path: "#impact" },
+    { label: "CSR & Partnership", path:"#csr-partnership"},
+    { label:"Contact", path:"#contact"}
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,13 +50,13 @@ function Navbar() {
             {links.map((link) => {
               const isActive = location.pathname === link.path;
               return (
-                <Link key={link.path} to={link.path}>
+                <a key={link.path} href={link.path}>
                   {link.label}
-                </Link>
+                </a>
               );
             })}
             <DonateBtn
-              bgcolor={isScrolled ? "black" : "white"}
+              bgcolor={isScrolled ? "#e85d04" : "white"}
               txtcolor={isScrolled ? "white" : "black"}
             />
           </div>

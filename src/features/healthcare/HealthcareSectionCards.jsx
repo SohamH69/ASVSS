@@ -1,34 +1,33 @@
-"use client";
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const items = [
   {
     id: 1,
-    title: "Sports & Leadership",
+    title: "Adopt A Player",
     image:
-      "https://thumbs.dreamstime.com/b/children-adolescents-india-living-poor-neighborhood-attending-school-rajasthan-enjoying-sports-activities-time-208343037.jpg",
-    link:"/football"
+      "https://images.squarespace-cdn.com/content/v1/62900c65736c094d8d1b495d/1662058523408-8WWQOP85IX3V6H6G9OZU/Adopt-a-child-from-foster-care-1024x1024.jpg",
+    link:"#adopt-player"
     },
   {
     id: 2,
-    title: "Healthcare Access",
+    title: "Team Sponsor",
     image:
-      "https://d12aarmt01l54a.cloudfront.net/cms/images/Media-20220512170241/808-440.png",
-    link:"/healthcare"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6-MX2Fyew5s3U23qqIPO6JVRciwpxoW1J2ukOZRNUC_PovGfAItBBrG_&s=10",
+    link:"#team-sponsor"
     },
   {
     id: 3,
-    title: "Women's Livelihood",
+    title: "Event Sponsor",
     image:
-      "https://images.livemint.com/img/2022/03/07/original/oped1_1646670646465.jpg",
-    link:"/self-reliance"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs4cHlLyvqOhCSis4B_y4CEIfDgsCGA5Kt5faXgUcZIS-ZdwnCx3hJ8Nw&s=10",
+    link:"#event-sponsor"
     },
 ];
 
+
 function TiltCard({ item }) {
-  const [style, setStyle] = useState({
+    const [style, setStyle] = useState({
     transform: "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)",
   });
 
@@ -55,7 +54,6 @@ function TiltCard({ item }) {
       transform: "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)",
     });
   };
-
   return (
     <div
       className="group"
@@ -63,7 +61,7 @@ function TiltCard({ item }) {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <Link to={item.link}>
+      <a href={item.link}>
       <div
         style={style}
         className="overflow-hidden border border-black/10 bg-white shadow-sm transition-all duration-300 ease-out will-change-transform group-hover:shadow-2xl"
@@ -72,7 +70,7 @@ function TiltCard({ item }) {
           <img
             src={item.image}
             alt={item.title}
-            className="h-78 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-68 w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
 
           {/* optional overlay glow */}
@@ -85,16 +83,16 @@ function TiltCard({ item }) {
           </h3>
         </div>
       </div>
-      </Link>
+      </a>
     </div>
-  );
+  )
 }
 
-export default function SectionCard() {
-  return (
-    <section className="px-4 pb-8 sm:px-6 md:px-8 lg:px-10 lg:py-12">
+export default function HealthcareSectionCards() {
+    return (
+    <section className="px-4 py-8 sm:px-6 md:px-8 lg:px-10 lg:py-12">
       <div className="mx-auto max-w-[1900px]">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 lg:grid-cols-3">
           {items.map((item) => (
             <TiltCard key={item.id} item={item} />
           ))}
