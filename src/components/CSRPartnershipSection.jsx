@@ -33,7 +33,7 @@ const tags = [
 
 function CSRPartnershipSection() {
   return (
-    <section className="w-full max-w-6xl mx-auto bg-white shadow-sm mb-40 overflow-hidden grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] opacity-0 translate-y-8 animate-[sectionIn_0.8s_cubic-bezier(0.22,1,0.36,1)_forwards]" id="csr-partnership">
+    <section className="w-full max-w-6xl mx-auto bg-white  mb-40 overflow-hidden grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] opacity-0 translate-y-8 animate-[sectionIn_0.8s_cubic-bezier(0.22,1,0.36,1)_forwards]" id="csr-partnership">
       {/* ========== LEFT COLUMN ========== */}
       <div className="flex flex-col gap-7 p-8 sm:p-10 lg:p-12">
         {/* Eyebrow */}
@@ -48,7 +48,7 @@ function CSRPartnershipSection() {
         </h2>
 
         {/* Description */}
-        <p className="text-[15px] max-w-xl leading-relaxed opacity-0 translate-y-3.5 animate-[fadeUp_0.6s_0.4s_cubic-bezier(0.22,1,0.36,1)_forwards]">
+        <p className="text-md max-w-xl leading-relaxed opacity-0 translate-y-3.5 animate-[fadeUp_0.6s_0.4s_cubic-bezier(0.22,1,0.36,1)_forwards]">
           ASVSS holds a valid CSR Registration under the Companies Act 2013,
           allowing your organisation to direct its mandatory Corporate Social
           Responsibility spend towards verified, on-ground programmes in
@@ -84,7 +84,7 @@ function CSRPartnershipSection() {
           {features.map((item, i) => (
             <li
               key={i}
-              className="flex items-start gap-3 text-[14.5px] text-slate-600 opacity-0 -translate-x-3 animate-[slideIn_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards]"
+              className="flex items-start gap-3 text-md text-slate-600 opacity-0 -translate-x-3 animate-[slideIn_0.5s_cubic-bezier(0.22,1,0.36,1)_forwards]"
               style={{ animationDelay: `${0.55 + i * 0.07}s` }}
             >
               <span className="mt-2 shrink-0 w-2 h-2 bg-[#e85d04] shadow-[0_0_0_3px_rgba(232,93,4,0.15)]" />
@@ -114,11 +114,11 @@ function CSRPartnershipSection() {
         </div>
 
         {/* Focus Areas Title */}
-        <h3 className="text-xl font-bold text-gray-900 opacity-0 translate-y-3 animate-[fadeUp_0.55s_0.55s_cubic-bezier(0.22,1,0.36,1)_forwards]">
+        <h3 className="text-xl font-bold text-[#e85d04] opacity-0 translate-y-3 animate-[fadeUp_0.55s_0.55s_cubic-bezier(0.22,1,0.36,1)_forwards]">
           Eligible CSR Focus Areas
         </h3>
 
-        <p className="text-sm -mt-3 opacity-0 translate-y-2.5 animate-[fadeUp_0.55s_0.62s_cubic-bezier(0.22,1,0.36,1)_forwards]">
+        <p className="text-md -mt-3 opacity-0 translate-y-2.5 animate-[fadeUp_0.55s_0.62s_cubic-bezier(0.22,1,0.36,1)_forwards]">
           Our programmes span multiple Schedule VII categories — allowing
           flexible CSR alignment across your reporting requirements.
         </p>

@@ -7,7 +7,7 @@ const cards = [
     title: "From a shared balcony to a steady income: Meena's beekeeping journey",
     description:
       "When Meena first heard about the beekeeping training, she was sceptical. Eighteen months later, she tends six hives and sells at two local markets — and three of her neighbours have enrolled.",
-    image: "https://media.istockphoto.com/id/870402320/photo/a-social-worker-meeting-with-a-group-of-villagers.jpg?s=612x612&w=0&k=20&c=2JlS1vqg4pU5lCp8oiFXjVgMPlHbhrmH4wmtRJdq384=",
+    image: "src/assets/beekeperSundarbans.jpeg",
   },
   {
     number: "02",
@@ -15,7 +15,7 @@ const cards = [
     title: "Raju's first district selection — and the coach who refused to give up",
     description:
       "Three years of early-morning practice, a few setbacks and an unshakeable coach. Raju is now in the district youth squad.",
-    image: "https://d34ad2g4hirisc.cloudfront.net/volunteer_positions/photos/000/033/532/main/4a47a0db6e60853dedfcfdf08a5ca249.png",
+    image: "src/assets/raju.jpeg",
   },
   {
     number: "03",
@@ -23,7 +23,7 @@ const cards = [
     title: "Annual Health Camp — 420 patients seen in one day",
     description:
       "Our December camp was the largest in ASVSS history. Thirteen volunteer doctors and nurses served 420 patients from five neighbourhoods.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tLgtXkrH8EmDZGZE8FGACQBh5ImnJIRN5aI17fo1ltMsmWC61ah78G8_&s=10",
+    image: "src/assets/artcamp.jpeg",
   },
 ];
 
@@ -175,17 +175,17 @@ export default function StackedCards() {
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 max-w-3xl p-7 md:p-12 lg:p-14">
-                  <div className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-white md:text-sm">
+                  {/* <div className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-white md:text-sm">
                     {card.label}
-                  </div>
+                  </div> */}
 
                   <h2 className="mb-5 text-3xl font-medium tracking-[-0.03em] text-white md:text-5xl lg:text-6xl">
                     {card.title}
                   </h2>
 
-                  <p className="max-w-2xl text-base leading-relaxed text-white/65 md:text-lg lg:text-xl">
+                  {/* <p className="max-w-2xl text-base leading-relaxed text-white/65 md:text-lg lg:text-xl">
                     {card.description}
-                  </p>
+                  </p> */}
                 </div>
 
                 {/* Subtle inner border */}

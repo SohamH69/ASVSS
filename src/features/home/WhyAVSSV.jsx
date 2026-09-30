@@ -14,7 +14,7 @@ const items = [
     stat: "300+",
     statDescription: "active players across two training grounds",
     image:
-      "https://images.unsplash.com/photo-1789758387115-1dfbbb620e93?q=80&w=1170&auto=format&fit=crop",
+      "src/assets/Sports&LeadershipAcademy.jpeg",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const items = [
     stat: "500+",
     statDescription: "children enrolled each academic year",
     image:
-      "https://plus.unsplash.com/premium_photo-1789722582311-a9aa3120bb76?q=80&w=1228&auto=format&fit=crop",
+      "src/assets/CreativeDevelopmentProgramme.jpeg",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const items = [
     stat: "200+",
     statDescription: "women trained since 2011",
     image:
-      "https://images.unsplash.com/photo-1789745199014-452bcf630170?q=80&w=765&auto=format&fit=crop",
+      "src/assets/VocationalTraining&SHGSupport.jpeg",
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const items = [
     stat: "3,000+",
     statDescription: "patients seen across annual camps",
     image:
-      "https://images.unsplash.com/photo-1779974183733-400d98f22e20?q=80&w=1177&auto=format&fit=crop",
+      "src/assets/Healthcare&WellnessCamps.jpeg",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const items = [
     stat: "40+",
     statDescription: "trained keepers with active hives",
     image:
-      "https://images.unsplash.com/photo-1790042281644-4e7637a957d7?q=80&w=687&auto=format&fit=crop",
+      "src/assets/CreatingOpportunities.jpeg",
   },
   {
     id: 6,
@@ -72,9 +72,9 @@ const items = [
     description:
       "Annual drives to plant native species in urban commons, school grounds and riverside areas — building ecological literacy alongside green cover.",
     stat: "10,000+",
-    statDescription: "trained keepers with active hives",
+    statDescription: "saplings planted since 2015",
     image:
-      "https://images.unsplash.com/photo-1790042281644-4e7637a957d7?q=80&w=687&auto=format&fit=crop",
+      "src/assets/treeplantration.jpeg",
   },
 ];
 
@@ -176,7 +176,7 @@ function WhyAVSSV() {
         <h1 className="mb-4 text-2xl font-bold text-center uppercase md:text-3xl">
           Six programmes.<br></br>
           One neighbourhood.<br></br>
-          Lasting change.
+          <span className="text-[#e85d04]">Lasting change.</span>
         </h1>
 
         <p className="mx-auto max-w-4xl text-center text-sm text-gray-700 md:text-xl">
@@ -270,7 +270,7 @@ function WhyAVSSV() {
                 >
                   <div className="">
                     {/* CATEGORY */}
-                    <p className="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-[#C75B26]">
+                    <p className="mb-2 text-xs font-medium uppercase tracking-[0.12em] text-[#e85d04]">
                       {item.category}
                     </p>
 
@@ -291,8 +291,8 @@ function WhyAVSSV() {
 
                     {/* STATISTICS */}
                     <div className="mt-auto flex flex-wrap items-baseline gap-x-2 gap-y-1 text-[#222222]">
-                      <span className="text-sm font-semibold">{item.stat}</span>
-                      <span className="text-xs">{item.statDescription}</span>
+                      <span className="text-md font-bold text-[#e85d04]">{item.stat}</span>
+                      <span className="text-sm">{item.statDescription}</span>
                     </div>
                   </div>
                 </div>

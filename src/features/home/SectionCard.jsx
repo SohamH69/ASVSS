@@ -8,22 +8,25 @@ const items = [
     id: 1,
     title: "Sports & Leadership",
     image:
-      "https://thumbs.dreamstime.com/b/children-adolescents-india-living-poor-neighborhood-attending-school-rajasthan-enjoying-sports-activities-time-208343037.jpg",
-    link:"/football"
+      "src/assets/sportsandledership.jpeg",
+    link:""
+    ///football
     },
   {
     id: 2,
     title: "Healthcare Access",
     image:
       "https://d12aarmt01l54a.cloudfront.net/cms/images/Media-20220512170241/808-440.png",
-    link:"/healthcare"
+    link:""
+    ///healthcare
     },
   {
     id: 3,
     title: "Women's Livelihood",
     image:
-      "https://images.livemint.com/img/2022/03/07/original/oped1_1646670646465.jpg",
-    link:"/self-reliance"
+      "src/assets/CreatingOpportunities.jpeg",
+    link:""
+    ///self-reliance
     },
 ];
 

@@ -90,18 +90,18 @@ function DonateSection() {
     <section className="w-full max-w-6xl mx-auto mb-20 overflow-hidden shadow-xl bg-[#faf8f5] opacity-0 translate-y-6 animate-[sectionIn_0.75s_cubic-bezier(0.22,1,0.36,1)_forwards]" id="contact">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
         {/* ========== LEFT: Make a Difference ========== */}
-        <div className="relative bg-[#7a3911] text-white p-8 sm:p-10 lg:p-12 flex flex-col lg:flex-row justify-between min-h-[420px] overflow-hidden">
+        <div className="relative bg-[#000000] text-white p-8 sm:p-10 lg:p-12 flex flex-col lg:flex-row justify-between min-h-[420px] overflow-hidden">
           {/* Decorative circles */}
           <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full border border-white/15 pointer-events-none" />
           <div className="absolute -bottom-20 -left-10 w-72 h-72 rounded-full border border-white/10 pointer-events-none" />
           <div className="absolute top-1/2 right-8 w-24 h-24 bg-white/5 pointer-events-none" />
 
           <div className="relative z-10 space-y-5">
-            <p className="text-[11px] font-bold tracking-[0.18em] uppercase text-orange-100 opacity-0 translate-y-6 animate-[fadeUp_0.55s_0.15s_cubic-bezier(0.22,1,0.36,1)_forwards]">
+            <p className="text-[11px] font-bold tracking-[0.18em] uppercase text-[#e85d04] opacity-0 translate-y-6 animate-[fadeUp_0.55s_0.15s_cubic-bezier(0.22,1,0.36,1)_forwards]">
               Make a Difference
             </p>
 
-            <h2 className="text-3xl sm:text-4xl leading-tight tracking-tight opacity-0 translate-y-4 animate-[fadeUp_0.6s_0.25s_cubic-bezier(0.22,1,0.36,1)_forwards]">
+            <h2 className="text-3xl font-bold sm:text-4xl translate-y-4 animate-[fadeUp_0.6s_0.25s_cubic-bezier(0.22,1,0.36,1)_forwards]">
               Every rupee reaches
               <br className="hidden sm:block" /> the ground.
             </h2>
@@ -121,7 +121,7 @@ function DonateSection() {
             Get in Touch
           </p>
 
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-snug mb-4 opacity-0 translate-y-4 animate-[fadeUp_0.6s_0.3s_cubic-bezier(0.22,1,0.36,1)_forwards]">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug mb-4 opacity-0 translate-y-4 animate-[fadeUp_0.6s_0.3s_cubic-bezier(0.22,1,0.36,1)_forwards]">
             Talk to us about partnerships, volunteering or donations.
           </h2>
 
